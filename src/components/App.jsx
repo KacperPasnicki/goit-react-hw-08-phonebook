@@ -39,17 +39,17 @@ dispatch(fetchContacts())
    <Routes>
       <Route path='/' element={<Layout/>}>
         <Route index element={<StartPage/>}/>
-        <Route path="/goit-react-hw-08-phonebook" element={<StartPage/>}/>
-        <Route path='/Register' 
+        <Route path="/goit-react-hw-08-phonebook" element={<Layout/>}/>
+        <Route path='/register' 
         element={<RestrictedRoute redirectTo='/contacts' component={<Register/>}/>
         }
         />
-        <Route path='/Login' 
+        <Route path='/login' 
         element={<RestrictedRoute redirectTo='/contacts' component={<Login/> }/>
       }
       />
 
-<Route path='/Contacts' 
+<Route path='/contacts' 
 element={<PrivateRoute redirectTo='/login' component={<Contacts/>}/>}/>
 
       </Route>

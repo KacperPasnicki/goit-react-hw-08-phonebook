@@ -138,5 +138,7 @@ transform: scale(1.090);
 margin-top: 25%;
   font-size: 6.4vh;
   padding: 20px;
-  color: orangered;
+  /* color:azure; */
+  text-align: center;
+ 
 }
