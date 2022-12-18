@@ -1,14 +1,15 @@
 import {NavLink, Outlet}    from 'react-router-dom'
 import { Suspense } from 'react'
 // import {useAuth} from 'hooks;'
+import css from './Navbar.module.css';
 
 export const Navbar = () => {
   
 
 return (
 
-    <div className='layout'>
-        <header className='navBar'>
+    <div >
+        <header className={css.navBar}>
                 <NavLink to='/' className="Link" onClick={() => window.scroll(0, 0)} end>
                     Home
                 </NavLink>

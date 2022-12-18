@@ -2,6 +2,8 @@ import { useDispatch } from "react-redux"
 
 import PropTypes from 'prop-types';
 import {deleteContacts} from 'redux/operations'
+import css from './ContactItem.module.css'
+
 
 export const ContactsItem = ({contact}) => {
 const dispatch = useDispatch()
@@ -9,8 +11,8 @@ const dispatch = useDispatch()
 
 return (
     <>
-    <span className='contact'>{contact.name} : {contact.phone}</span>
-    <button type="button" className='btn'
+    <span className={css.contact}>{contact.name} : {contact.phone}</span>
+    <button type="button" className={css.btn}
              onClick={removeContacts}>
               Remove Contact
 

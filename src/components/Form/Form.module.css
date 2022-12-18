@@ -1,0 +1,28 @@
+.nameForm{
+    display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      font-size: 26px;
+  }
+  
+  .label{
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .formName,
+  .filterForm,
+  .contact{
+    margin: 10px;
+    text-align: center;
+  }
+  .addButton{
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 25px;
+    border:none;
+    background-color: greenyellow;
+    transition: all 0.3s linear;
+  }

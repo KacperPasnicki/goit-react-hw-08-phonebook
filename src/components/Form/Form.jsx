@@ -3,8 +3,8 @@ import { nanoid } from 'nanoid'
 // import PropTypes from 'prop-types';
 import { useDispatch,useSelector } from 'react-redux';
 import { getContact,  } from 'redux/selectors';
-
 import {addContacts} from 'redux/operations'
+import css from './Form.module.css'
 
 export const Form =() => {
   const items = useSelector(getContact);
@@ -32,9 +32,9 @@ export const Form =() => {
 
     
       return (
-        <form className='nameForm' onSubmit={handleSubmit}
+        <form className={css.nameForm} onSubmit={handleSubmit}
         htmlFor={Id}>
-          <label className='label'><span className='formName'>Name: </span>
+          <label className={css.label}><span className={css.formName}>Name: </span>
           <input 
           id={Id}
           
@@ -47,7 +47,7 @@ export const Form =() => {
           
           />
           </label>
-          <label className='label'><span className='formName'>Number: </span>
+          <label className={css.label}><span className={css.formName}>Number: </span>
           <input 
           id={Id}
       
@@ -61,7 +61,7 @@ export const Form =() => {
           
           />
           </label>
-          <button className='addButton' type="submit">Add Contact</button>
+          <button className={css.addButton} type="submit">Add Contact</button>
       
           
         </form>

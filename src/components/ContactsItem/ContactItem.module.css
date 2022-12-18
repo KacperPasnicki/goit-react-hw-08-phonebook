@@ -1,0 +1,16 @@
+.formName,
+.filterForm,
+.contact{
+  margin: 10px;
+  text-align: center;
+}
+
+.btn{
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 25px;
+    border:none;
+    background-color: orangered;
+    transition: width 1s ease-in, height 1s ease-in;
+    transition: all 0.3s linear;
+  }
