@@ -9,10 +9,10 @@ import { useDispatch, useSelector } from 'react-redux';
 
  import {getIsLoading, getError} from 'redux/selectors'
 import { fetchContacts } from 'redux/operations';
-
-
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
+import { useAuth } from 'hooks';
+import { Layout } from './Layout';
 
 const StartPage = lazy(() => import('pages/StartPage/StartPage'));
 const Register = lazy(()=> import('pages/Register/Register'))
@@ -20,27 +20,32 @@ const Login = lazy(()=> import('pages/Login/Login'))
 const Contacts = lazy (()=> import('pages/Contacts/Contacts'))
 
 export const App =() => {
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
+  const { isRefreshing } = useAuth();
   // const isLoading = useSelector(getIsLoading);
   // const error = useSelector(getError);
   // const {items, isLoading, filter, error} = useSelector(getContact)
 
-// useEffect(()=> {
-// dispatch(fetchContacts())
-// }, [dispatch]);
+useEffect(()=> {
+dispatch(fetchContacts())
+}, [dispatch]);
+
 
     
-  return (
+  
+  return isRefreshing ? (
+    <b>Refreshing user...</b>
+  ) :(
    <Routes>
-      <Route path='/' element={<Navbar/>}>
+      <Route path='/' element={<Layout/>}>
         <Route index element={<StartPage/>}/>
         <Route path="/goit-react-hw-08-phonebook" element={<StartPage/>}/>
         <Route path='/Register' 
-        element={<RestrictedRoute redirectTo='/Contacts' component={<Register/>}/>
+        element={<RestrictedRoute redirectTo='/contacts' component={<Register/>}/>
         }
         />
         <Route path='/Login' 
-        element={<RestrictedRoute redirectTo='/Contacts' component={<Login/> }/>
+        element={<RestrictedRoute redirectTo='/contacts' component={<Login/> }/>
       }
       />
 
