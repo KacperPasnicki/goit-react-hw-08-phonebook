@@ -3,19 +3,18 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { ContactsList } from 'components/ContactsList/ContactsList';
 import { Form } from "components/Form/Form";
-import { useAuth } from 'hooks';
+
 import { Filter } from 'components/Filter';
 
  import {getIsLoading, getError} from 'redux/selectors'
 import { fetchContacts } from 'redux/operations';
-import userEvent from '@testing-library/user-event';
+
 
 const Contacts = () => {
     const dispatch = useDispatch()
     const isLoading = useSelector(getIsLoading);
     const error = useSelector(getError);
-    const {user} = useAuth
-
+  
     useEffect(()=> {
         dispatch(fetchContacts())
         }, [dispatch]);

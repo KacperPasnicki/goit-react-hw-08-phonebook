@@ -4,10 +4,10 @@ import { Routes, Route } from 'react-router-dom';
 // import { Form } from "./Form/Form";
 
 // import { Filter } from './Filter';
-import { Navbar } from './Navbar/Navbar';
-import { useDispatch, useSelector } from 'react-redux';
 
- import {getIsLoading, getError} from 'redux/selectors'
+import { useDispatch} from 'react-redux';
+
+//  import {getIsLoading, getError} from 'redux/selectors'
 import { fetchContacts } from 'redux/operations';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
@@ -61,8 +61,7 @@ element={<PrivateRoute redirectTo='/login' component={<Contacts/>}/>}/>
   
 }
 
-
-{/* <div className='phonebook'>
+/* <div className='phonebook'>
 <Navbar/>
 <h1>Phonebook</h1>
 <Form />
@@ -73,4 +72,4 @@ element={<PrivateRoute redirectTo='/login' component={<Contacts/>}/>}/>
 <ContactsList
 
 />
-</div> */}
+</div> */
