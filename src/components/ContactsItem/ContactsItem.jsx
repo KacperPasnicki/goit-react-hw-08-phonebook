@@ -11,7 +11,7 @@ const dispatch = useDispatch()
 
 return (
     <>
-    <span className={css.contact}>{contact.name} : {contact.phone}</span>
+    <span className={css.contact}>{contact.name} : {contact.number}</span>
     <button type="button" className={css.btn}
              onClick={removeContacts}>
               Remove Contact
