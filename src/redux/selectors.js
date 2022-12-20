@@ -12,7 +12,6 @@ export const getFindContact = createSelector(
       const valueToLow = filter.toLowerCase();
       return item.name.toLowerCase().includes(valueToLow);
     });
-    console.log(newArray);
     return newArray;
   }
 );
