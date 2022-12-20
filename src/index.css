@@ -29,45 +29,10 @@ h6 {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-  max-width: 1200px;
-  /* background-color:#D3D3D3; */
   flex-direction: row;
-
   flex-wrap: wrap;
 }
 
-.phonebook {
-  margin-top: 50px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 2rem;
-  box-shadow: 5px 5px 10px orange;
-  padding: 25px;
-  background-color: #edf7f6;
-  height: '100%';
-
-  color: '#010101';
-  padding: '50px 10px';
-}
-
-.label {
-  padding: 5px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.formName,
-.filterForm,
-.contact {
-  margin: 10px;
-  text-align: center;
-}
 li {
   display: flex;
   text-align: center;
@@ -80,56 +45,4 @@ ul {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: baseline;
-}
-.nameForm {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  font-size: 26px;
-}
-.addButton {
-  font-size: 22px;
-  padding: 15px;
-  border-radius: 25px;
-  border: none;
-  background-color: greenyellow;
-  transition: all 0.3s linear;
-}
-.btn {
-  font-size: 18px;
-  padding: 5px;
-  border-radius: 25px;
-  border: none;
-  background-color: orangered;
-  transition: width 1s ease-in, height 1s ease-in;
-  transition: all 0.3s linear;
-}
-.btn:hover,
-.addButton:hover {
-  opacity: 0.8;
-  cursor: pointer;
-  scale: 1.1;
-}
-
-/*/
-
-task 08
-/*/
-
-.Link {
-  color: #39445a;
-  text-decoration: none;
-  justify-content: space-between;
-  margin: 25px;
-}
-.Link:hover {
-  opacity: 0.9;
-  transform: scale(1.09);
-}
-.header {
-  margin-top: 25%;
-  font-size: 6.4vh;
-  padding: 20px;
-  /* color:azure; */
-  text-align: center;
 }
