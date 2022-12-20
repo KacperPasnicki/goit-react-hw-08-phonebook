@@ -1,28 +1,25 @@
-import { useDispatch } from "react-redux"
+import { useDispatch } from 'react-redux';
 
 import PropTypes from 'prop-types';
-import {deleteContacts} from 'redux/operations'
-import css from './ContactItem.module.css'
+import { deleteContacts } from 'redux/operations';
+import css from './ContactItem.module.css';
 
+export const ContactsItem = ({ contact }) => {
+  const dispatch = useDispatch();
+  const removeContacts = () => dispatch(deleteContacts(contact.id));
 
-export const ContactsItem = ({contact}) => {
-const dispatch = useDispatch()
-    const removeContacts = () =>dispatch(deleteContacts(contact.id))
-
-return (
+  return (
     <>
-    <span className={css.contact}>{contact.name} : {contact.number}</span>
-    <button type="button" className={css.btn}
-             onClick={removeContacts}>
-              Remove Contact
-
-             </button>
+      <span className={css.contact}>
+        {contact.name} : {contact.number}
+      </span>
+      <button type="button" className={css.btn} onClick={removeContacts}>
+        Remove Contact
+      </button>
     </>
-)
-
-}
+  );
+};
 
 ContactsItem.propTypes = {
-    contact: PropTypes.object.isRequired,
-    
-      }
+  contact: PropTypes.object.isRequired,
+};

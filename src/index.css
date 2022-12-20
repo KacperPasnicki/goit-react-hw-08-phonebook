@@ -1,7 +1,5 @@
-
-
 body {
-  background-color:#D3D3D3;
+  background-color: #d3d3d3;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -16,24 +14,29 @@ code {
 }
 li,
 ul,
-h1, h2, h3, h3, h4, h5, h6
-{
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6 {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-#root{
+#root {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-    max-width: 1200px;
-    /* background-color:#D3D3D3; */
-    flex-direction: row;
-    
-    flex-wrap: wrap;
+  max-width: 1200px;
+  /* background-color:#D3D3D3; */
+  flex-direction: row;
+
+  flex-wrap: wrap;
 }
 
-.phonebook{
+.phonebook {
   margin-top: 50px;
   display: inline-flex;
   flex-wrap: wrap;
@@ -47,15 +50,12 @@ h1, h2, h3, h3, h4, h5, h6
   padding: 25px;
   background-color: #edf7f6;
   height: '100%';
-        
+
   color: '#010101';
   padding: '50px 10px';
-  
-  
 }
 
-
-.label{
+.label {
   padding: 5px;
   margin: 10px;
   display: flex;
@@ -64,53 +64,51 @@ h1, h2, h3, h3, h4, h5, h6
 
 .formName,
 .filterForm,
-.contact{
+.contact {
   margin: 10px;
   text-align: center;
 }
-li{
+li {
   display: flex;
   text-align: center;
-    margin: 10px;
-    align-items: center;
+  margin: 10px;
+  align-items: center;
 }
 
-ul{
-  
+ul {
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: baseline;
 }
-.nameForm{
+.nameForm {
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 26px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 26px;
 }
-.addButton{
+.addButton {
   font-size: 22px;
   padding: 15px;
   border-radius: 25px;
-  border:none;
+  border: none;
   background-color: greenyellow;
   transition: all 0.3s linear;
 }
-.btn{
+.btn {
   font-size: 18px;
   padding: 5px;
   border-radius: 25px;
-  border:none;
+  border: none;
   background-color: orangered;
   transition: width 1s ease-in, height 1s ease-in;
   transition: all 0.3s linear;
 }
 .btn:hover,
-.addButton:hover{
+.addButton:hover {
   opacity: 0.8;
   cursor: pointer;
   scale: 1.1;
-  
 }
 
 /*/
@@ -118,24 +116,20 @@ ul{
 task 08
 /*/
 
-
-
 .Link {
   color: #39445a;
   text-decoration: none;
   justify-content: space-between;
- margin: 25px;
+  margin: 25px;
 }
-.Link:hover{
+.Link:hover {
   opacity: 0.9;
-transform: scale(1.090);
-
+  transform: scale(1.09);
 }
-.header{
-margin-top: 25%;
+.header {
+  margin-top: 25%;
   font-size: 6.4vh;
   padding: 20px;
   /* color:azure; */
   text-align: center;
- 
 }
