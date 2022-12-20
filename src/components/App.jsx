@@ -1,10 +1,10 @@
-import React, { useEffect, lazy } from 'react';
+import { useEffect, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { refreshUser } from 'redux/auth/operations';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
-import { useAuth } from 'hooks';
+import { useAuth } from 'hooks/useAuth';
 import { Layout } from './Layout';
 
 const StartPage = lazy(() => import('pages/StartPage/StartPage'));

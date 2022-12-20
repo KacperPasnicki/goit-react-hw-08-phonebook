@@ -6,7 +6,7 @@ import { Form } from 'components/Form/Form';
 import { Filter } from 'components/Filter/Filter';
 import { getIsLoading, getError } from 'redux/selectors';
 import { fetchContacts } from 'redux/operations';
-import css from './Contacts.module.css';
+// import css from './Contacts.module.css';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const Contacts = () => {
   }, [dispatch]);
 
   return (
-    <div className={css.phonebook}>
+    <div>
       <Helmet>
         <title>Phonebook</title>
       </Helmet>

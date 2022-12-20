@@ -17,9 +17,7 @@ export const Form = () => {
     const form = e.currentTarget;
     const name = form.elements.name.value;
     const number = form.elements.number.value;
-
     const nameArray = items.map(name => name);
-
     if (nameArray.includes(name)) {
       alert(`${name} is already in contacts !`);
     } else {
