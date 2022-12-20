@@ -7,3 +7,15 @@
 .username {
   font-weight: 700;
 }
+.logOutBtn {
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+  background-color: orangered;
+  transition: width 1s ease-in, height 1s ease-in;
+  transition: all 0.2s linear;
+}
+.logOutBtn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
