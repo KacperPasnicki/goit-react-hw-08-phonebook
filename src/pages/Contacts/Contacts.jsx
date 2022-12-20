@@ -5,7 +5,7 @@ import { ContactsList } from 'components/ContactsList/ContactsList';
 import { Form } from 'components/Form/Form';
 import { Filter } from 'components/Filter';
 import { getIsLoading, getError } from 'redux/selectors';
-import { refreshUser } from 'redux/auth/operations';
+import { fetchContacts } from 'redux/operations';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ const Contacts = () => {
   const error = useSelector(getError);
 
   useEffect(() => {
-    dispatch(refreshUser());
+    dispatch(fetchContacts());
   }, [dispatch]);
 
   return (
