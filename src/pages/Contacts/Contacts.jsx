@@ -5,7 +5,7 @@ import { ContactsList } from 'components/ContactsList/ContactsList';
 import { Form } from 'components/Form/Form';
 import { Filter } from 'components/Filter';
 import { getIsLoading, getError } from 'redux/selectors';
-import { fetchContacts } from 'redux/operations';
+import { refreshUser } from 'redux/auth/operations';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ const Contacts = () => {
   const error = useSelector(getError);
 
   useEffect(() => {
-    dispatch(fetchContacts());
+    dispatch(refreshUser());
   }, [dispatch]);
 
   return (
@@ -21,9 +21,7 @@ const Contacts = () => {
       <Helmet>
         <title>Phonebook</title>
       </Helmet>
-      {/* <p>Welcome, {user.name}</p> */}
       <Form />
-
       <h2>Contacts:</h2>
       <Filter />
       {isLoading && !error && <b>Request in progress...</b>}
