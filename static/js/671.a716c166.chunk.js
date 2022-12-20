@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[671],{671:function(e,a,r){r.r(a);var n=r(184);a.default=function e(){return e?(0,n.jsx)(n.Fragment,{children:(0,n.jsxs)("h1",{className:"header",children:["Phonebook welcome page"," ",(0,n.jsx)("span",{role:"img","aria-label":"Greeting icon",children:"\ud83d\udc81\u200d\u2640\ufe0f"})]})}):"...loading"}}}]);
-//# sourceMappingURL=671.a716c166.chunk.js.map
