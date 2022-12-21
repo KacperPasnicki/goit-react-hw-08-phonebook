@@ -24,7 +24,7 @@ export const App = () => {
     <b>Refreshing user...</b>
   ) : (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="" element={<Layout />}>
         <Route index element={<StartPage />} />
         <Route path="/goit-react-hw-08-phonebook" element={<StartPage />} />
         <Route
